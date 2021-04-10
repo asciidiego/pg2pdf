@@ -11,7 +11,7 @@ For example, for extracting the text of "What You Wish You'd Known"
 >> """
 )
 
-essay_url = f"http://www.paulgraham.com/{essay}.html"
+essay_url = f"http://www.paulgraham.com/{essay_canonical_name}.html"
 
 response = urllib.request.urlopen(essay_url)
 response_as_html = response.read().decode("utf-8")
